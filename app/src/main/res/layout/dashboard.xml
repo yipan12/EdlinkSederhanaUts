@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        >
+
+
+
+    <View
+        android:id="@+id/greenBackground"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:background="#009900"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/roundedBox"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageInborder"
+            android:src="@drawable/images"
+            android:scaleType="fitCenter"
+            android:padding="1dp"
+            android:contentDescription="Image didalam border"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonOpenBottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profil Pengguna"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingTop="8dp"
+        android:paddingLeft="5dp"
+        android:layout_toEndOf="@id/roundedBox"
+        android:layout_alignTop="@id/roundedBox"
+        android:drawableRight="@drawable/baseline_keyboard_arrow_down_24"
+        android:drawableTint="@color/white"
+        android:onClick="onButtonOpenBottomSheetClicked"
+
+        />
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded_corner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+
+
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/kegiatan"
+        android:layout_height="wrap_content"
+        android:text="Jadwal Kegiatan"
+        android:textColor="@color/black"
+        android:paddingTop="84dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kegiatan"
+        android:layout_centerHorizontal="true"
+        android:text="Kegiatan kuliah tidak tersedia"
+        android:paddingTop="20dp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rowPertama"
+        android:layout_below="@id/greenBackground"
+        android:paddingLeft="35sp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_green"
+                android:id="@+id/kotakPertama"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="presensi Code "
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_green"
+                android:id="@+id/kotakKedua"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Kartu Mahasiswa"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_green"
+                android:id="@+id/kotakKetiga"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Keuangan"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<!--    row kedua-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rowKedua"
+        android:layout_below="@id/rowPertama"
+        android:paddingLeft="35sp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_green"
+                android:id="@+id/kotakempat"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Pengisian Krs"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_green"
+                android:id="@+id/kotakLima"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Tugas Akhir"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_green"
+                android:id="@+id/kotakenam"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Konsultasi"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    
+
+
+</RelativeLayout>
+
+
